@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.Navbar {
+  background-color: #eeb517;
+  color: #fff;
+  width: 100%;
+  padding: 2.25rem 1.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Navbar h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Navbar .flash {
+  color: white;
+  font-size: 2rem;
+  align-self: center;
+}
+
+.Navbar .tilt {
+  transform: rotateZ(-10deg);
+  display: inline-block;
+}

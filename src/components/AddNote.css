@@ -1,0 +1,102 @@
+.AddNote {
+  display: flex;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  min-height: 5rem;
+  height: fit-content;
+  position: relative;
+  transition: height 1s ease;
+  margin-bottom: 5rem;
+}
+
+.AddNote .display-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.35rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.AddNote .display-input {
+  flex-grow: 1;
+}
+
+.AddNote .display-input input::placeholder {
+  font-weight: light;
+}
+
+.AddNote .display-input input:focus {
+  border: none;
+}
+
+.AddNote .expanded-input {
+  flex-grow: 1;
+}
+
+.AddNote .expanded-input .title {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.35rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+.AddNote .expanded-input .note {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.35rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  resize: none;
+  overflow: hidden;
+  height: auto;
+}
+
+.AddNote .add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  background-color: #eeb517;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 2rem;
+  right: 2rem;
+  bottom: -1.5rem;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  animation: expand 0.5s ease-in-out;
+}
+
+.AddNote .add-button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .AddNote {
+    max-width: 35rem;
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
